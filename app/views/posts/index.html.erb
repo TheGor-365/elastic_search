@@ -1,0 +1,11 @@
+<h1>Posts</h1>
+
+<div id="posts">
+  <% @posts.each do |post| %>
+    <%= link_to "Details", post, class: "text-success" %>
+    <%= render post %><br>
+  <% end %>
+</div>
+<br><hr>
+
+<%= link_to "New post", new_post_path, class: "text-primary" %>
